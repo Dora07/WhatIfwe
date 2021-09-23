@@ -73,6 +73,9 @@
                                 <rect key="frame" x="101" y="617" width="206" height="155"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="大作戰"/>
+                                <connections>
+                                    <segue destination="CfN-Ud-sWY" kind="showDetail" id="dTW-i4-YVK"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -82,6 +85,86 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-197.10144927536234" y="88.392857142857139"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="cdd-nx-Fgz">
+            <objects>
+                <viewController id="CfN-Ud-sWY" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UKg-dF-23X">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="shop" translatesAutoresizingMaskIntoConstraints="NO" id="bzs-7J-vy8">
+                                <rect key="frame" x="0.0" y="-37" width="414" height="913"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="9" borderStyle="bezel" textAlignment="center" minimumFontSize="17" background="heart" translatesAutoresizingMaskIntoConstraints="NO" id="pMd-Tl-bpq">
+                                <rect key="frame" x="288" y="60" width="72" height="66"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Hantaba" id="NQW-8a-jGW">
+                                <rect key="frame" x="-42" y="554" width="270" height="299"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="men" translatesAutoresizingMaskIntoConstraints="NO" id="eZx-a8-G4Z">
+                                <rect key="frame" x="76" y="382" width="381" height="576"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="1A2B                                                        " textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="2Ad-BD-SWO">
+                                <rect key="frame" x="20" y="147" width="374" height="196"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="9" borderStyle="bezel" textAlignment="center" minimumFontSize="17" background="heart" translatesAutoresizingMaskIntoConstraints="NO" id="XFh-6b-2cj">
+                                <rect key="frame" x="128" y="60" width="72" height="66"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="9" borderStyle="bezel" textAlignment="center" minimumFontSize="17" background="heart" translatesAutoresizingMaskIntoConstraints="NO" id="zsE-WL-UmC">
+                                <rect key="frame" x="208" y="60" width="72" height="66"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="48Q-uy-lFO">
+                                <rect key="frame" x="35" y="433" width="102" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.993424152" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                <state key="normal" title="Go">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="GoButtonAction:" destination="SzJ-Ni-De7" eventType="touchUpInside" id="NzT-hw-I34"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="9" borderStyle="bezel" textAlignment="center" minimumFontSize="17" background="heart" translatesAutoresizingMaskIntoConstraints="NO" id="3ul-bT-7Wb">
+                                <rect key="frame" x="48" y="60" width="72" height="66"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="プロポーズしよ！！" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a34-ky-yQS">
+                                <rect key="frame" x="3" y="339" width="411" height="74"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="M02-75-Uow"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zjV-Sc-quC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="686.95652173913049" y="456.69642857142856"/>
         </scene>
         <!--Koku Haku View Controller-->
         <scene sceneID="FhO-GN-e28">
@@ -182,9 +265,12 @@
     </scenes>
     <resources>
         <image name="EasyBackground" width="600" height="338"/>
+        <image name="Hantaba" width="351" height="400"/>
         <image name="StudentLove" width="400" height="400"/>
         <image name="heart" width="843" height="693"/>
+        <image name="men" width="253" height="400"/>
         <image name="natruralflower" width="600" height="338"/>
+        <image name="shop" width="800" height="702"/>
         <image name="ズ" width="361" height="300"/>
         <image name="プ" width="365" height="318"/>
         <image name="ポ" width="337" height="347"/>
@@ -192,6 +278,9 @@
         <image name="ー" width="313" height="85"/>
         <image name="作戰" width="727" height="624"/>
         <image name="大作戰" width="754" height="552"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
