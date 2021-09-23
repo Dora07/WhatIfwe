@@ -29,7 +29,7 @@ class KokuHakuViewController: UIViewController
         super.viewDidLoad()
        //自動產生0-50之間亂數的函式
         CurrectAnswer =  Int(arc4random_uniform(50))
-        
+        print(CurrectAnswer)
     }
     
 
@@ -89,7 +89,6 @@ class KokuHakuViewController: UIViewController
             GuessTime.text = "残り\(Chance)回"
         } //狀況二：猜的數字大於答案時
         else if test > CurrectAnswer
-            
         {   //提示最大數字為答案-1
             TopNumber = test - 1
             //提示：太多了
@@ -110,12 +109,44 @@ class KokuHakuViewController: UIViewController
             GuessTime.text = "残り\(Chance)回"
         }//狀況四：答對了！
        else
-        {  //提示：答對了！！女生座號對了開始交往了呢
-            TipLabel.text = "正解！彼女は\(GetNumberRange())付き合い始める"
+        {  //提示：答對了！！女生座號!!
+            TipLabel.text = "正解！彼女の番号は\(CurrectAnswer)！"
             //變更圖片為情侶勾手
             LoverImage.image = UIImage(named: "coupleschool")
+            GoButton.isHidden = true
+            //清空剩餘次數
+            GuessTime.text = "付き合い始める！"
+            
         }
     }
+ 
+    @IBAction func PlayAgainAction(_ sender: UIButton)
+    {
+        //提示
+        TipLabel.text = "告白しよ！！"
+        //猜的數字歸零
+        InPutNumber.text = "00"
+        //機會變回5次
+        Chance = 5
+        GuessTime.text = "残り\(Chance)回"
+        //最大數字變為50
+        TopNumber = 50
+        //最小數字為0
+        LeastNumber = 0
+        //答案重新隨機數字
+        CurrectAnswer =  Int(arc4random_uniform(50))
+        print(CurrectAnswer)
+        //人物回到告白
+        LoverImage.image = UIImage(named: "StudentLove")
+        //把GOButton還回來
+        GoButton.isHidden = false
+    }
+    
+    //按按鈕收鍵盤
+     func textFieldShouldReturn(_ textField: UITextField) -> Bool{
+         InPutNumber.resignFirstResponder()
+         return true
+     }
     
     
 
