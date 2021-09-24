@@ -86,10 +86,10 @@
             </objects>
             <point key="canvasLocation" x="-197.10144927536234" y="88.392857142857139"/>
         </scene>
-        <!--View Controller-->
+        <!--Pu Ro Po Zu View Controller-->
         <scene sceneID="cdd-nx-Fgz">
             <objects>
-                <viewController id="CfN-Ud-sWY" sceneMemberID="viewController">
+                <viewController id="CfN-Ud-sWY" customClass="PuRoPoZuViewController" customModule="WhatIfwe" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UKg-dF-23X">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -112,12 +112,12 @@
                                 <rect key="frame" x="76" y="382" width="381" height="576"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="1A2B                                                        " textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="2Ad-BD-SWO">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="                                 " textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="2Ad-BD-SWO">
                                 <rect key="frame" x="20" y="147" width="374" height="196"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <color key="textColor" systemColor="labelColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="9" borderStyle="bezel" textAlignment="center" minimumFontSize="17" background="heart" translatesAutoresizingMaskIntoConstraints="NO" id="XFh-6b-2cj">
@@ -126,6 +126,18 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wGB-g8-ux1">
+                                <rect key="frame" x="35" y="433" width="102" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                <state key="normal" title="Again">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="GoButtonAction:" destination="SzJ-Ni-De7" eventType="touchUpInside" id="I5d-Qm-NlZ"/>
+                                </connections>
+                            </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="9" borderStyle="bezel" textAlignment="center" minimumFontSize="17" background="heart" translatesAutoresizingMaskIntoConstraints="NO" id="zsE-WL-UmC">
                                 <rect key="frame" x="208" y="60" width="72" height="66"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -161,6 +173,18 @@
                         <viewLayoutGuide key="safeArea" id="M02-75-Uow"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="ABTextView" destination="2Ad-BD-SWO" id="4Ft-FB-olf"/>
+                        <outlet property="AgainButton" destination="wGB-g8-ux1" id="MMP-6R-Buj"/>
+                        <outlet property="FlowerImage" destination="NQW-8a-jGW" id="N5U-bq-1u7"/>
+                        <outlet property="GoButton" destination="48Q-uy-lFO" id="XnP-ER-xdT"/>
+                        <outlet property="MenImage" destination="eZx-a8-G4Z" id="oKd-zW-NJi"/>
+                        <outlet property="TipLabel" destination="a34-ky-yQS" id="SPD-kG-agZ"/>
+                        <outletCollection property="GuessNumTextField" destination="3ul-bT-7Wb" collectionClass="NSMutableArray" id="THp-eR-T5d"/>
+                        <outletCollection property="GuessNumTextField" destination="XFh-6b-2cj" collectionClass="NSMutableArray" id="uH7-5o-9yp"/>
+                        <outletCollection property="GuessNumTextField" destination="zsE-WL-UmC" collectionClass="NSMutableArray" id="0kG-4r-LEa"/>
+                        <outletCollection property="GuessNumTextField" destination="pMd-Tl-bpq" collectionClass="NSMutableArray" id="994-di-QkG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zjV-Sc-quC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

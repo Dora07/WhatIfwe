@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8614F11326FDC86D006006E9 /* PuRoPoZuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8614F11226FDC86D006006E9 /* PuRoPoZuViewController.swift */; };
 		8618907926FB4E9B00BDEB9C /* KokuHakuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8618907826FB4E9B00BDEB9C /* KokuHakuViewController.swift */; };
 		86BC64EB26F3771800D1C044 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BC64EA26F3771800D1C044 /* AppDelegate.swift */; };
 		86BC64ED26F3771800D1C044 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BC64EC26F3771800D1C044 /* SceneDelegate.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8614F11226FDC86D006006E9 /* PuRoPoZuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuRoPoZuViewController.swift; sourceTree = "<group>"; };
 		8618907826FB4E9B00BDEB9C /* KokuHakuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KokuHakuViewController.swift; sourceTree = "<group>"; };
 		86BC64E726F3771800D1C044 /* WhatIfwe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhatIfwe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86BC64EA26F3771800D1C044 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 				86BC64EC26F3771800D1C044 /* SceneDelegate.swift */,
 				86BC64EE26F3771800D1C044 /* ViewController.swift */,
 				86BC64F026F3771800D1C044 /* Main.storyboard */,
+				8614F11226FDC86D006006E9 /* PuRoPoZuViewController.swift */,
 				8618907826FB4E9B00BDEB9C /* KokuHakuViewController.swift */,
 				86BC64F326F3771B00D1C044 /* Assets.xcassets */,
 				86BC64F526F3771B00D1C044 /* LaunchScreen.storyboard */,
@@ -263,6 +266,7 @@
 			files = (
 				86BC64EF26F3771800D1C044 /* ViewController.swift in Sources */,
 				8618907926FB4E9B00BDEB9C /* KokuHakuViewController.swift in Sources */,
+				8614F11326FDC86D006006E9 /* PuRoPoZuViewController.swift in Sources */,
 				86BC64EB26F3771800D1C044 /* AppDelegate.swift in Sources */,
 				86BC64ED26F3771800D1C044 /* SceneDelegate.swift in Sources */,
 			);
