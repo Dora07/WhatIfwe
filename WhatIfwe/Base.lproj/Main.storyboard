@@ -153,6 +153,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
+                                    <action selector="GoButtonAction:" destination="CfN-Ud-sWY" eventType="touchUpInside" id="9CW-tG-yfR"/>
                                     <action selector="GoButtonAction:" destination="SzJ-Ni-De7" eventType="touchUpInside" id="NzT-hw-I34"/>
                                 </connections>
                             </button>
@@ -176,6 +177,7 @@
                     <connections>
                         <outlet property="ABTextView" destination="2Ad-BD-SWO" id="4Ft-FB-olf"/>
                         <outlet property="AgainButton" destination="wGB-g8-ux1" id="MMP-6R-Buj"/>
+                        <outlet property="BackGroundView" destination="UKg-dF-23X" id="Vid-ym-CrS"/>
                         <outlet property="FlowerImage" destination="NQW-8a-jGW" id="N5U-bq-1u7"/>
                         <outlet property="GoButton" destination="48Q-uy-lFO" id="XnP-ER-xdT"/>
                         <outlet property="MenImage" destination="eZx-a8-G4Z" id="oKd-zW-NJi"/>
